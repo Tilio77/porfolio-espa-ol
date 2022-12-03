@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Milan</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ENCABEZADO Y MENU -->
+      <header>
+        <h1 class="gradient-text">MILAN</h1>
+        <nav id="nav">
+          <a href="#inicio" onclick="seleccionar()">Inicio</a>
+          <a href="#sobremi" onclick="seleccionar()">Sobre mí</a>
+          <a href="#curriculum" onclick="seleccionar()">Currículum</a>
+          <a href="#porfolio" onclick="seleccionar()">Porfolio</a>
+          <a href="#contacto" onclick="seleccionar()">Contacto</a>
+        </nav>
+        <div
+          id="icon-nav"
+          class="nav-responsive"
+          onclick="mostrarOcultarMenu()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      <!-- SECCION INICIO -->
+      <section id="inicio">
+        <div class="fila">
+          <div class="col">
+            <p>Soy Milan Bornehavell</p>
+            <h1 class="gradient-text">Diseñador Web</h1>
+            <button>Contactame</button>
+          </div>
+          <div class="col">
+            <div class="contenedor-img">
+              <img src="img/foto.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCION SOBRE MI -->
+      <section id="sobremi">
+        <div class="fila">
+          <div class="col info">
+            <h3>Sobre mí</h3>
+            <h2>Soy Diseñador Web</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              nam odio iusto deserunt error laborum recusandae voluptas.
+            </p>
+          </div>
+          <div class="col">
+            <div class="contenedor-img">
+              <img src="img/sobremi.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CURRICULUM -->
+      <section id="curriculum">
+        <h3>Currículum</h3>
+        <div class="fila">
+          <div class="col">
+            <p class="experiencia">Experiencia</p>
+            <h2>
+              Mas de 6 años de experiencia como
+              <span class="txtEspecial">Diseñador</span>
+            </h2>
+          </div>
+          <div class="col">
+            <div class="info">
+              <div class="item">
+                <span class="circulo"></span>
+                <h4>Pexel Company</h4>
+                <p>Diseñador Gráfico (2015 -2019)</p>
+              </div>
+              <div class="item">
+                <span class="circulo"></span>
+                <h4>Pexel Company</h4>
+                <p>Diseñador Gráfico (2015 -2019)</p>
+              </div>
+              <div class="item">
+                <span class="circulo"></span>
+                <h4>Pexel Company</h4>
+                <p>Diseñador Gráfico (2015 -2019)</p>
+              </div>
+              <div class="item">
+                <span class="circulo"></span>
+                <h4>Pexel Company</h4>
+                <p>Diseñador Gráfico (2015 -2019)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PORFOLIO -->
+      <section id="porfolio">
+        <h3>Porfolio</h3>
+        <div class="fila">
+          <div class="col">
+            <div class="trabajo">
+              <img src="img/t1.jpg" />
+              <p class="desc">Trabajo 1</p>
+            </div>
+            <div class="trabajo">
+              <img src="img/t2.jpg" />
+              <p class="desc">Trabajo 2</p>
+            </div>
+            <div class="trabajo">
+              <img src="img/t3.jpg" />
+              <p class="desc">Trabajo 3</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="trabajo">
+              <img src="img/t4.jpg" />
+              <p class="desc">Trabajo 4</p>
+            </div>
+            <div class="trabajo">
+              <img src="img/t5.jpg" />
+              <p class="desc">Trabajo 5</p>
+            </div>
+            <div class="trabajo">
+              <img src="img/t6.jpg" />
+              <p class="desc">Trabajo 6</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="trabajo">
+              <img src="img/t7.jpg" />
+              <p class="desc">Trabajo 7</p>
+            </div>
+            <div class="trabajo">
+              <img src="img/t8.jpg" />
+              <p class="desc">Trabajo 8</p>
+            </div>
+            <div class="trabajo">
+              <img src="img/t9.jpg" />
+              <p class="desc">Trabajo 9</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN CONTACTO -->
+      <section id="contacto">
+        <h3>Contacto</h3>
+        <div class="redes">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook gradient-text"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-twitter gradient-text"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-instagram gradient-text"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin gradient-text"></i>
+          </a>
+        </div>
+        <form action="">
+          <div class="entrada">
+            <label for="">Nombre</label>
+            <input type="text">
+          </div>
+          <div class="entrada">
+            <label for="">Correo</label>
+            <input type="text">
+          </div>
+          <div class="entrada">
+            <label for="">Tema</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <button>Enviar</button>
+        </form>
+      </section>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
